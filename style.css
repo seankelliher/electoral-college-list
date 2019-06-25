@@ -1,0 +1,295 @@
+#container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*header and its contents*/
+header {
+    width: 90%;
+    margin: 0;
+    padding: .5em 5%;
+}
+
+h1 {
+    line-height: 1.5;
+    font-family: 'Francois One', sans-serif;
+}
+
+@media all and (min-width: 300px) {
+    h1 {
+        font-size: 1.2em;
+    }
+}
+
+@media all and (min-width: 400px) {
+    h1 {
+        font-size: 1.4em;
+    }
+}
+
+@media all and (min-width: 600px) {
+    h1 {
+        font-size: 1.6em;
+    }
+}
+
+header p {
+    line-height: 1.8;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+}
+
+@media all and (min-width: 300px) {
+    header p {
+        font-size: .825em;
+    }
+}
+
+@media all and (min-width: 600px) {
+    header p {
+        font-size: .875em;
+    }
+}
+
+@media all and (min-width: 900px) {
+    header p {
+        font-size: 1em;
+    }
+}
+
+/*main and its contents*/
+main {
+    width: 90%;
+    margin: 1.5em 5%;
+    padding: 0;
+}
+
+/*The "p" within "main" is the flexbox container.*/
+main p {
+    display: flex;
+    flex-flow: row wrap; /*shorthand for flex-direction, flex-wrap*/
+    justify-content: flex-start; /*main axis*/
+    align-items: flex-start; /*cross-axis*/
+    border-bottom: 1px solid #ebebeb;
+}
+
+.votes-style {
+    flex: initial; /*shorthand for 0 1 auto (grow, shrink, basis)*/
+    margin: 0 5% 0 0;
+    padding: 0;
+    line-height: 1.8;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+}
+
+#votes-column {
+    flex: initial; /*shorthand for 0 1 auto (grow, shrink, basis)*/
+    margin: 0 5% 0 0;
+    padding: 0;
+    line-height: 1.8;
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+}
+
+@media all and (min-width: 300px) {
+    .votes-style, #votes-column {
+        width: 15%;
+        font-size: .825em;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .votes-style, #votes-column {
+        /*width inherited*/
+        font-size: .875em;
+    }
+}
+
+@media all and (min-width: 900px) {
+    .votes-style, #votes-column {
+        /*width inherited*/
+        font-size: 1em;
+    }
+}
+
+.state-style {
+    flex: initial; /*shorthand for 0 1 auto (grow, shrink, basis)*/
+    margin: 0 5% 0 0;
+    padding: 0;
+    line-height: 1.8;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+}
+
+#state-column {
+    flex: initial; /*shorthand for 0 1 auto (grow, shrink, basis)*/
+    margin: 0 5% 0 0;
+    padding: 0;
+    line-height: 1.8;
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+}
+
+@media all and (min-width: 300px) {
+    .state-style, #state-column  {
+        width: 40%;
+        font-size: .825em;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .state-style, #state-column  {
+        width: 50%;
+        font-size: .875em;
+    }
+}
+
+@media all and (min-width: 900px) {
+    .state-style, #state-column  {
+        width: 55%;
+        font-size: 1em;
+    }
+}
+
+.state-style:hover {
+    cursor: pointer;
+}
+
+.w2016-style {
+    flex: initial; /*shorthand for 0 1 auto (grow, shrink, basis)*/
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+    font-family: 'Francois One', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+#w2016-column {
+    flex: initial; /*shorthand for 0 1 auto (grow, shrink, basis)*/
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+}
+
+@media all and (min-width: 300px) {
+    .w2016-style, #w2016-column {
+        width: 35%;
+        font-size: .825em;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .w2016-style, #w2016-column {
+        width: 25%;
+        font-size: .875em;
+    }
+}
+
+@media all and (min-width: 900px) {
+    .w2016-style, #w2016-column {
+        width: 20%;
+        font-size: 1em;
+    }
+}
+
+.state-selected {
+    /*text-decoration: line-through;*/
+    color: #bdbdbd;
+}
+
+/*.votes-selected {
+    background: pink;
+}*/
+
+#sum-square {
+    border: 1px solid #808e95;
+    border-radius: 50%;
+    background: #b0bec5;
+    position: fixed;
+    display: flex;
+    flex-flow: row wrap; /*shorthand for flex-direction, flex-wrap*/
+    justify-content: center; /*main axis*/
+    align-items: center; /*cross-axis*/
+    visibility: hidden;
+}
+
+@media all and (min-width: 300px) {
+    #sum-square {
+        width: 4em;
+        height: 4em;
+    }
+}
+
+@media all and (min-width: 600px) {
+    #sum-square {
+        width: 5em;
+        height: 5em;
+    }
+}
+
+@media all and (min-width: 900px) {
+    #sum-square {
+        width: 6em;
+        height: 6em;
+    }
+}
+
+#sum-square p {
+    line-height: 1.8;
+    font-family: 'Francois One', sans-serif;
+    font-weight: 300;
+}
+
+@media all and (min-width: 300px) {
+    #sum-square p {
+        font-size: .875em;
+    }
+}
+
+@media all and (min-width: 600px) {
+    #sum-square p {
+        font-size: 1em;
+    }
+}
+
+@media all and (min-width: 900px) {
+    #sum-square p {
+        font-size: 1.2em;
+    }
+}
+
+/*footer and its contents*/
+footer {
+    width: 90%;
+    margin: 0;
+    padding: .5em 5%;
+}
+
+footer p {
+    line-height: 1.8;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+}
+
+@media all and (min-width: 300px) {
+    footer p {
+        font-size: .825em;
+    }
+}
+
+@media all and (min-width: 600px) {
+    footer p {
+        font-size: .875em;
+    }
+}
+
+@media all and (min-width: 900px) {
+    footer p {
+        font-size: 1em;
+    }
+}
