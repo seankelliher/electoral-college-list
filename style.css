@@ -197,12 +197,12 @@ main p {
     }
 }
 
-.state-selected {
+.state-picked {
     /*text-decoration: line-through;*/
     color: #bdbdbd;
 }
 
-/*.votes-selected {
+/*.votes-picked {
     background: pink;
 }*/
 
