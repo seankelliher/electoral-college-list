@@ -398,24 +398,20 @@ voteInfo = {
             span2.id = index.identity + "-state";
             span3.id = index.identity + "-w2016";
 
-            //Set background color for state span.
-            //span2.style.backgroundColor = "transparent";
-
-            //Assign text content to span elements.
+            //Assign text content and bg color to span elements.
             span1.textContent = index.votes;
             span2.textContent = index.state;
             span3.textContent = index.w2016;
-            span3.style.backgroundColor = index.c2016; //test
+            span3.style.backgroundColor = index.c2016;
 
-            //Join spans and p element.
+            //Join spans and p elements.
             para.appendChild(span1);
             para.appendChild(span2);
             para.appendChild(span3);
 
-            //Join main and p element.
+            //Join main and p elements.
             const main = document.querySelector("main");
             main.appendChild(para);
-
         });
 
             //Invoke the next function.
@@ -466,7 +462,7 @@ voteInfo = {
         //Get the sum-text element.
         const sumText = document.getElementById("sum-text");
 
-        //If not states are picked, make votes zero.
+        //If no states are picked, make votes zero.
         if (!votesPicked || !votesPicked.length) {
             sumText.textContent = "0";
         } else {
@@ -479,6 +475,7 @@ voteInfo = {
             //Add numbers using reduce.
             const sum = num.reduce((acc, val) => acc + val);
 
+            //Place the result.
             sumText.textContent = sum;
         }
 
@@ -504,7 +501,7 @@ voteInfo = {
         const windowWidth = window.innerWidth;
         const windowHeight = window.innerHeight;
 
-        //Position the sum-square element.
+        //Calculate position for the sum-square element.
 
         //Subtract container from window widths. Halve remainder.
         const remainder = windowWidth - containerWidth;
@@ -514,7 +511,7 @@ voteInfo = {
         const containerHalf = containerWidth / 2;
         const sumSqHalf = sumSqWidth / 2;
 
-        //Calculate the sum-square's position.
+        //Determine the sum-square's position.
         const sumSqRight = (remainderHalf  + containerHalf) - sumSqHalf;
         const sumSqTop = windowHeight / 3;
 
@@ -529,7 +526,7 @@ voteInfo = {
     repositionSum: function () {
         "use strict";
 
-        //Monitor the window. If resized, reposition aside element.
+        //Monitor the window. If resized, reposition the sum-square element.
         window.addEventListener("resize", function () {
             voteInfo.positionSum();
         });
