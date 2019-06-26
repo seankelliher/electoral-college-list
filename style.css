@@ -198,13 +198,8 @@ main p {
 }
 
 .state-picked {
-    /*text-decoration: line-through;*/
     color: #bdbdbd;
 }
-
-/*.votes-picked {
-    background: pink;
-}*/
 
 #sum-square {
     border: 1px solid #808e95;
