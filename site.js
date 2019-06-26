@@ -432,7 +432,7 @@ voteInfo = {
         main.addEventListener("click", function (event) {
 
             const columnTest = event.target.classList.contains("state-style");
-            const selectTest = event.target.classList.contains("state-selected");
+            const PickTest = event.target.classList.contains("state-picked");
             const targetId = event.target.id;
             const targetLength = targetId.length;
             const targetCore = targetId.substring(0, (targetLength - 5));
@@ -440,15 +440,15 @@ voteInfo = {
             const getVotesId = document.getElementById(votesId);
 
             //If target is state...
-            //If target contain "selected" class...
+            //If target contain "picked" class...
             if (columnTest === true) {
 
-                if (selectTest === false) {
-                    event.target.classList.add("state-selected");
-                    getVotesId.classList.add("votes-selected");
-                } else if (selectTest === true) {
-                    event.target.classList.remove("state-selected");
-                    getVotesId.classList.remove("votes-selected");
+                if (PickTest === false) {
+                    event.target.classList.add("state-picked");
+                    getVotesId.classList.add("votes-picked");
+                } else if (PickTest === true) {
+                    event.target.classList.remove("state-picked");
+                    getVotesId.classList.remove("votes-picked");
                 }
             }
 
@@ -460,18 +460,18 @@ voteInfo = {
     tallyVotes: function () {
         "use strict";
 
-        //Gather all elements with "selected" class.
-        const votesSelected = document.getElementsByClassName("votes-selected");
+        //Gather all elements with "picked" class.
+        const votesPicked = document.getElementsByClassName("votes-picked");
 
         //Get the sum-text element.
         const sumText = document.getElementById("sum-text");
 
-        //If not states are selected, make votes zero.
-        if (!votesSelected || !votesSelected.length) {
+        //If not states are picked, make votes zero.
+        if (!votesPicked || !votesPicked.length) {
             sumText.textContent = "0";
         } else {
-            //Transform selected node list into real array.
-            const texts = Array.from(votesSelected , (vote) => vote.textContent);
+            //Transform picked node list into real array.
+            const texts = Array.from(votesPicked , (vote) => vote.textContent);
 
             //Convert strings to numbers.
             const num = texts.map((text) => Number(text));
