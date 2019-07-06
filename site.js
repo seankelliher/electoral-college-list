@@ -432,7 +432,7 @@ voteInfo = {
         main.addEventListener("click", function (event) {
 
             const columnTest = event.target.classList.contains("state-style");
-            const PickTest = event.target.classList.contains("state-picked");
+            const pickTest = event.target.classList.contains("state-picked");
             const targetId = event.target.id;
             const targetLength = targetId.length;
             const targetCore = targetId.substring(0, (targetLength - 5));
@@ -443,10 +443,10 @@ voteInfo = {
             //If target contain "picked" class...
             if (columnTest === true) {
 
-                if (PickTest === false) {
+                if (pickTest === false) {
                     event.target.classList.add("state-picked");
                     getVotesId.classList.add("votes-picked");
-                } else if (PickTest === true) {
+                } else if (pickTest === true) {
                     event.target.classList.remove("state-picked");
                     getVotesId.classList.remove("votes-picked");
                 }
