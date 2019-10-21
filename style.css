@@ -59,6 +59,13 @@ header p {
     }
 }
 
+#notice {
+    margin: 0;
+    padding: .25em .5em;
+    background: #d7ccc8; /*brown 100*/
+    display: inline-block;
+}
+
 /*main and its contents*/
 main {
     width: 90%;
