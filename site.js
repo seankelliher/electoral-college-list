@@ -502,8 +502,8 @@ voteInfo = {
         //Remember, client width excludes margins.
 
         //Get the sum-square element and its width.
-        const sumSq = document.getElementById("sum-square");
-        const sumSqWidth = sumSq.clientWidth;
+        const sumCircle = document.getElementById("sum-square");
+        const sumCircleWidth = sumCircle.clientWidth;
 
         //Get the container element and its width.
         const container = document.getElementById("container");
@@ -521,18 +521,18 @@ voteInfo = {
 
         //Get half the container and sum-square width.
         const containerHalf = containerWidth / 2;
-        const sumSqHalf = sumSqWidth / 2;
+        const sumCircleHalf = sumCircleWidth / 2;
 
         //Calculate the sum-square's position.
-        const sumSqRight = (remainderHalf + containerHalf) - sumSqHalf;
-        const sumSqTop = windowHeight / 3;
+        const sumCircleRight = (remainderHalf + containerHalf) - sumCircleHalf;
+        const sumCircleTop = windowHeight / 3;
 
         //Set the sum-square's position.
-        sumSq.style.top = sumSqTop + "px";
-        sumSq.style.right = sumSqRight + "px";
+        sumCircle.style.top = sumCircleTop + "px";
+        sumCircle.style.right = sumCircleRight + "px";
 
         //Make sum-square visible.
-        sumSq.style.visibility = "visible";
+        sumCircle.style.visibility = "visible";
     },
 
     repositionSum: function () {
