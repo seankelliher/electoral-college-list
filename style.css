@@ -79,7 +79,7 @@ main p {
     flex-flow: row wrap; /*shorthand for flex-direction, flex-wrap*/
     justify-content: flex-start; /*main axis*/
     align-items: flex-start; /*cross-axis*/
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid #eee; /*grey 200*/
 }
 
 .votes-style {
