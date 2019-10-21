@@ -531,8 +531,20 @@ voteInfo = {
         sumCircle.style.top = sumCircleTop + "px";
         sumCircle.style.right = sumCircleRight + "px";
 
-        //Make sum-square visible.
+        //Receive the "sum" parameter.
+        //If below 270, make circle background grey.
+        //Otherwise, make circle background gold.
+        if (sm < 270) {
+            sumCircle.style.backgroundColor = "#f5f5f5";
+        } else {
+            sumCircle.style.backgroundColor = "#ffecb3";
+        }
+
+        //Make sum-circle visible.
         sumCircle.style.visibility = "visible";
+
+        //Invoke the next function.
+        voteInfo.repositionSum();
     },
 
     repositionSum: function () {
