@@ -488,15 +488,15 @@ voteInfo = {
             //Add numbers using reduce.
             const sum = num.reduce((acc, val) => acc + val);
 
+            //Place the result.
             sumText.textContent = sum;
-        }
 
-        //Invoke the next functions.
-        voteInfo.positionSum();
-        voteInfo.repositionSum();
+            //Invoke the next function. Pass "sum" as parameter.
+            voteInfo.positionSum(sum);
+        }
     },
 
-    positionSum: function () {
+    positionSum: function (sm) {
         "use strict";
 
         //Remember, client width excludes margins.
