@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-/*header and its contents*/
+/*Header and its content.*/
 header {
     width: 90%;
     margin: 0;
@@ -66,7 +66,7 @@ header p {
     display: inline-block;
 }
 
-/*main and its contents*/
+/*Main and its contents.*/
 main {
     width: 90%;
     margin: 1.5em 5%;
@@ -76,14 +76,14 @@ main {
 /*The "p" within "main" is the flexbox container.*/
 main p {
     display: flex;
-    flex-flow: row wrap; /*shorthand for flex-direction, flex-wrap*/
-    justify-content: flex-start; /*main axis*/
-    align-items: flex-start; /*cross-axis*/
+    flex-flow: row wrap; /*Shorthand for flex-direction, flex-wrap.*/
+    justify-content: flex-start; /*Main axis.*/
+    align-items: flex-start; /*Cross-axis.*/
     border-bottom: 1px solid #eee; /*grey 200*/
 }
 
 .votes-style {
-    flex: initial; /*shorthand for 0 1 auto (grow, shrink, basis)*/
+    flex: initial; /*Shorthand for 0 1 auto (grow, shrink, basis).*/
     margin: 0 5% 0 0;
     padding: 0;
     line-height: 1.8;
@@ -92,7 +92,7 @@ main p {
 }
 
 #votes-column {
-    flex: initial; /*shorthand for 0 1 auto (grow, shrink, basis)*/
+    flex: initial; /*Shorthand for 0 1 auto (grow, shrink, basis).*/
     margin: 0 5% 0 0;
     padding: 0;
     line-height: 1.8;
@@ -122,7 +122,7 @@ main p {
 }
 
 .state-style {
-    flex: initial; /*shorthand for 0 1 auto (grow, shrink, basis)*/
+    flex: initial; /*Shorthand for 0 1 auto (grow, shrink, basis).*/
     margin: 0 5% 0 0;
     padding: 0;
     line-height: 1.8;
@@ -131,7 +131,7 @@ main p {
 }
 
 #state-column {
-    flex: initial; /*shorthand for 0 1 auto (grow, shrink, basis)*/
+    flex: initial; /*Shorthand for 0 1 auto (grow, shrink, basis).*/
     margin: 0 5% 0 0;
     padding: 0;
     line-height: 1.8;
@@ -165,7 +165,7 @@ main p {
 }
 
 .w2016-style {
-    flex: initial; /*shorthand for 0 1 auto (grow, shrink, basis)*/
+    flex: initial; /*Shorthand for 0 1 auto (grow, shrink, basis).*/
     margin: 0;
     padding: 0;
     line-height: 1.8;
@@ -175,7 +175,7 @@ main p {
 }
 
 #w2016-column {
-    flex: initial; /*shorthand for 0 1 auto (grow, shrink, basis)*/
+    flex: initial; /*Shorthand for 0 1 auto (grow, shrink, basis).*/
     margin: 0;
     padding: 0;
     line-height: 1.8;
@@ -211,12 +211,11 @@ main p {
 #sum-circle {
     border: 1px solid #bdbdbd; /*grey 400*/
     border-radius: 50%;
-    background: #b0bec5;
     position: fixed;
     display: flex;
-    flex-flow: row wrap; /*shorthand for flex-direction, flex-wrap*/
-    justify-content: center; /*main axis*/
-    align-items: center; /*cross-axis*/
+    flex-flow: row wrap; /*Shorthand for flex-direction, flex-wrap.*/
+    justify-content: center; /*Main axis.*/
+    align-items: center; /*Cross-axis.*/
     visibility: hidden;
 }
 
@@ -265,7 +264,7 @@ main p {
     }
 }
 
-/*footer and its contents*/
+/*Footer and its contents.*/
 footer {
     width: 90%;
     margin: 0;
