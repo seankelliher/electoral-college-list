@@ -208,7 +208,7 @@ main p {
     color: #bdbdbd; /*grey 400*/
 }
 
-#sum-square {
+#sum-circle {
     border: 1px solid #bdbdbd; /*grey 400*/
     border-radius: 50%;
     background: #b0bec5;
@@ -221,46 +221,46 @@ main p {
 }
 
 @media all and (min-width: 300px) {
-    #sum-square {
+    #sum-circle {
         width: 4em;
         height: 4em;
     }
 }
 
 @media all and (min-width: 600px) {
-    #sum-square {
+    #sum-circle {
         width: 5em;
         height: 5em;
     }
 }
 
 @media all and (min-width: 900px) {
-    #sum-square {
+    #sum-circle {
         width: 6em;
         height: 6em;
     }
 }
 
-#sum-square p {
+#sum-circle p {
     line-height: 1.8;
     font-family: 'Francois One', sans-serif;
     font-weight: 300;
 }
 
 @media all and (min-width: 300px) {
-    #sum-square p {
+    #sum-circle p {
         font-size: .875em;
     }
 }
 
 @media all and (min-width: 600px) {
-    #sum-square p {
+    #sum-circle p {
         font-size: 1em;
     }
 }
 
 @media all and (min-width: 900px) {
-    #sum-square p {
+    #sum-circle p {
         font-size: 1.2em;
     }
 }
