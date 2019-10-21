@@ -452,9 +452,18 @@ voteInfo = {
                 }
             }
 
-            //Invoke the next function.
+            //Invoke the next functions.
+            voteInfo.hideNotice();
             voteInfo.tallyVotes();
         });
+    },
+
+    hideNotice: function () {
+        "use strict";
+
+        //Retrieve the "notice" id and hide it.
+        const notice = document.getElementById("notice");
+        notice.style.display = "none";
     },
 
     tallyVotes: function () {
