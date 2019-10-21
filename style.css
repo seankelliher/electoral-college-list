@@ -205,11 +205,11 @@ main p {
 }
 
 .state-picked {
-    color: #bdbdbd;
+    color: #bdbdbd; /*grey 400*/
 }
 
 #sum-square {
-    border: 1px solid #808e95;
+    border: 1px solid #bdbdbd; /*grey 400*/
     border-radius: 50%;
     background: #b0bec5;
     position: fixed;
