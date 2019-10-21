@@ -405,7 +405,7 @@ voteInfo = {
             span1.textContent = index.votes;
             span2.textContent = index.state;
             span3.textContent = index.w2016;
-            span3.style.backgroundColor = index.c2016; //test
+            span3.style.backgroundColor = index.c2016;
 
             //Join spans and p element.
             para.appendChild(span1);
@@ -501,8 +501,8 @@ voteInfo = {
 
         //Remember, client width excludes margins.
 
-        //Get the sum-square element and its width.
-        const sumCircle = document.getElementById("sum-square");
+        //Get the sum-circle element and its width.
+        const sumCircle = document.getElementById("sum-circle");
         const sumCircleWidth = sumCircle.clientWidth;
 
         //Get the container element and its width.
@@ -513,21 +513,21 @@ voteInfo = {
         const windowWidth = window.innerWidth;
         const windowHeight = window.innerHeight;
 
-        //Position the sum-square element.
+        //Position the sum-circle element.
 
         //Subtract container from window widths. Halve remainder.
         const remainder = windowWidth - containerWidth;
         const remainderHalf = remainder / 2;
 
-        //Get half the container and sum-square width.
+        //Get half the container and sum-circle width.
         const containerHalf = containerWidth / 2;
         const sumCircleHalf = sumCircleWidth / 2;
 
-        //Calculate the sum-square's position.
+        //Calculate the sum-circle's position.
         const sumCircleRight = (remainderHalf + containerHalf) - sumCircleHalf;
         const sumCircleTop = windowHeight / 3;
 
-        //Set the sum-square's position.
+        //Set the sum-circle's position.
         sumCircle.style.top = sumCircleTop + "px";
         sumCircle.style.right = sumCircleRight + "px";
 
