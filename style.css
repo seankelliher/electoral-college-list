@@ -13,8 +13,9 @@ header {
 }
 
 h1 {
-    line-height: 1.5;
     font-family: 'Francois One', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
 }
 
 @media all and (min-width: 300px) {
@@ -36,8 +37,8 @@ h1 {
 }
 
 header p {
-    line-height: 1.8;
     font-family: 'Merriweather', serif;
+    line-height: 1.8;
     font-weight: 400;
 }
 
@@ -86,8 +87,8 @@ main p {
     flex: initial; /*Shorthand for 0 1 auto (grow, shrink, basis).*/
     margin: 0 5% 0 0;
     padding: 0;
-    line-height: 1.8;
     font-family: 'Merriweather', serif;
+    line-height: 1.8;
     font-weight: 400;
 }
 
@@ -95,9 +96,9 @@ main p {
     flex: initial; /*Shorthand for 0 1 auto (grow, shrink, basis).*/
     margin: 0 5% 0 0;
     padding: 0;
-    line-height: 1.8;
     font-family: 'Merriweather', serif;
-    font-weight: 600;
+    line-height: 1.8;
+    font-weight: 400;
 }
 
 @media all and (min-width: 300px) {
@@ -125,8 +126,8 @@ main p {
     flex: initial; /*Shorthand for 0 1 auto (grow, shrink, basis).*/
     margin: 0 5% 0 0;
     padding: 0;
-    line-height: 1.8;
     font-family: 'Merriweather', serif;
+    line-height: 1.8;
     font-weight: 400;
 }
 
@@ -134,9 +135,9 @@ main p {
     flex: initial; /*Shorthand for 0 1 auto (grow, shrink, basis).*/
     margin: 0 5% 0 0;
     padding: 0;
-    line-height: 1.8;
     font-family: 'Merriweather', serif;
-    font-weight: 600;
+    line-height: 1.8;
+    font-weight: 400;
 }
 
 @media all and (min-width: 300px) {
@@ -168,9 +169,9 @@ main p {
     flex: initial; /*Shorthand for 0 1 auto (grow, shrink, basis).*/
     margin: 0;
     padding: 0;
-    line-height: 1.8;
     font-family: 'Francois One', sans-serif;
-    font-weight: 300;
+    line-height: 1.8;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -178,9 +179,9 @@ main p {
     flex: initial; /*Shorthand for 0 1 auto (grow, shrink, basis).*/
     margin: 0;
     padding: 0;
-    line-height: 1.8;
     font-family: 'Merriweather', serif;
-    font-weight: 600;
+    line-height: 1.8;
+    font-weight: 400;
 }
 
 @media all and (min-width: 300px) {
@@ -241,9 +242,9 @@ main p {
 }
 
 #sum-circle p {
-    line-height: 1.8;
     font-family: 'Francois One', sans-serif;
-    font-weight: 300;
+    line-height: 1.8;
+    font-weight: 400;
 }
 
 @media all and (min-width: 300px) {
@@ -272,8 +273,8 @@ footer {
 }
 
 footer p {
-    line-height: 1.8;
     font-family: 'Merriweather', serif;
+    line-height: 1.8;
     font-weight: 400;
 }
 
