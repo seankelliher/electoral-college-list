@@ -432,37 +432,37 @@ voteInfo = {
     highlightClicked: function () {
         "use strict";
 
-        //Get the states group.
-        const main = document.getElementsByTagName("main")[0];
+        //Get the main element.
+        const main = document.querySelector("main");
 
         //Add an event listener.
         main.addEventListener("click", function (event) {
 
-            const columnTest = event.target.classList.contains("state-style");
-            const pickTest = event.target.classList.contains("state-picked");
-            const targetId = event.target.id;
-            const targetLength = targetId.length;
-            const targetCore = targetId.substring(0, (targetLength - 5));
-            const votesId = targetCore + "votes";
-            const getVotesId = document.getElementById(votesId);
+            //Get the target's parent and grandparent.
+            const parent = event.target.parentElement;
+            const gparent = parent.parentElement;
+            const gparentClassList = gparent.classList;
 
-            //If target is state...
-            //If target contain "picked" class...
-            if (columnTest === true) {
+            //Check if click happened within <div class="state">.
+            //You only want something to happen if user clicks on a state.
+            if (parent.className === "state") {
 
-                if (pickTest === false) {
-                    event.target.classList.add("state-picked");
-                    getVotesId.classList.add("votes-picked");
-                } else if (pickTest === true) {
-                    event.target.classList.remove("state-picked");
-                    getVotesId.classList.remove("votes-picked");
+                //Add or remove "selects" class.
+                if (gparentClassList.contains("selects") === false) {
+                    gparentClassList.add("selects");
+
+                    //Invoke the tallyVotes function.
+                    voteInfo.tallyVotes();
+
+                } else if (gparentClassList.contains("selects") === true) {
+                    gparentClassList.remove("selects");
+
+                    //Invoke the tallyVotes function.
+                    voteInfo.tallyVotes();
                 }
             }
-
-            //Invoke the next functions.
-            voteInfo.hideNotice();
-            voteInfo.tallyVotes();
         });
+
     },
 
     hideNotice: function () {
