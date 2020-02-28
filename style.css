@@ -110,7 +110,6 @@ footer {
 /*Fonts*/
 p, button {
     font-family: 'Roboto', serif;
-    font-size: 1em;
     line-height: 1.8;
     font-weight: 400;
 }
@@ -122,18 +121,30 @@ h1 {
 }
 
 @media all and (min-width: 300px) {
+    p, button {
+        font-size: .875em;
+    }
+
     h1 {
         font-size: 1.2em;
     }
 }
 
 @media all and (min-width: 400px) {
+    p, button {
+        font-size: .9375em;
+    }
+
     h1 {
         font-size: 1.4em;
     }
 }
 
 @media all and (min-width: 600px) {
+    p, button {
+        font-size: 1em;
+    }
+
     h1 {
         font-size: 1.6em;
     }
