@@ -373,48 +373,55 @@ voteInfo = {
         }
     ],
 
-    //Create the p and span elements.
-    createParas: function () {
+    //Create the elements.
+    createEle: function () {
         "use strict";
 
         //For each function.
         voteInfo.electoralCollege.forEach(function (index) {
 
-            //Create p element.
-            const para = document.createElement("p");
+            //Create section element.
+            const sect = document.createElement("section");
 
-            //Create span elements.
-            const span1 = document.createElement("span");
-            const span2 = document.createElement("span");
-            const span3 = document.createElement("span");
+            //Create div elements.
+            const div1 = document.createElement("div");
+            const div2 = document.createElement("div");
+            const div3 = document.createElement("div");
 
-            //Assign class name to spans (for styling).
-            span1.setAttribute("class", "votes-style");
-            span2.setAttribute("class", "state-style");
-            span3.setAttribute("class", "w2016-style");
+            //Create p and button elements.
+            const para1 = document.createElement("p");
+            const para2 = document.createElement("p");
+            const button = document.createElement("button");
 
-            //Assign ids to each element.
-            span1.id = index.identity + "-votes";
-            span2.id = index.identity + "-state";
-            span3.id = index.identity + "-w2016";
+            //Assign id to section.
+            sect.setAttribute("id", index.identity);
 
-            //Set background color for state span.
-            //span2.style.backgroundColor = "transparent";
+            //Assign class name to divs (for styling).
+            div1.setAttribute("class", "votes");
+            div2.setAttribute("class", "state");
+            div3.setAttribute("class", "w2016");
 
-            //Assign text content to span elements.
-            span1.textContent = index.votes;
-            span2.textContent = index.state;
-            span3.textContent = index.w2016;
-            span3.style.backgroundColor = index.c2016;
+            //Assign text content to paras and button.
+            para1.textContent = index.votes;
+            para2.textContent = index.state;
+            button.textContent = index.w2016;
 
-            //Join spans and p element.
-            para.appendChild(span1);
-            para.appendChild(span2);
-            para.appendChild(span3);
+            //Assign bg color to button.
+            button.style.backgroundColor = index.c2016;
 
-            //Join main and p element.
+            //Append paras and button to divs.
+            div1.appendChild(para1);
+            div2.appendChild(para2);
+            div3.appendChild(button);
+
+            //Append divs to section.
+            sect.appendChild(div1);
+            sect.appendChild(div2);
+            sect.appendChild(div3);
+
+            //Append section to main.
             const main = document.querySelector("main");
-            main.appendChild(para);
+            main.appendChild(sect);
 
         });
 
