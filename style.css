@@ -80,6 +80,13 @@ section {
     cursor: pointer;
 }
 
+#w2016-heading, .w2016 {
+    width: 25%;
+    margin: 0 5% 0 0;
+    padding: 0;
+    flex: initial; /*flex 0 1 auto*/
+}
+
 h1 {
     font-family: 'Francois One', sans-serif;
     line-height: 1.5;
