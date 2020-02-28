@@ -98,13 +98,13 @@ section {
 
 @media all and (min-width: 300px) {
     #votes-heading, .votes {
-        width: 10%;
+        width: 13%;
     }
 }
 
 @media all and (min-width: 340px) {
     #votes-heading, .votes {
-        width: 10%;
+        width: 15%;
     }
 }
 
@@ -123,7 +123,7 @@ section {
 
 @media all and (min-width: 300px) {
     #state-heading, .state {
-        width: 40%;
+        width: 37%;
     }
 }
 
