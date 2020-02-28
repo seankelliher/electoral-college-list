@@ -24,6 +24,24 @@ header {
     align-items: center; /*cross-axis.*/
 }
 
+#header-text {
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    flex: initial; /*flex 0 1 auto*/
+}
+
+#header-button {
+    width: 25%;
+    margin: 0 5% 0 0;
+    padding: 0;
+    flex: initial; /*flex 0 1 auto*/
+}
+
+#sum-text {
+    background: #F5F5F5; /*grey 100*/
+}
+
 h1 {
     font-family: 'Francois One', sans-serif;
     line-height: 1.5;
