@@ -465,14 +465,6 @@ voteInfo = {
 
     },
 
-    hideNotice: function () {
-        "use strict";
-
-        //Retrieve the "notice" id and hide it.
-        const notice = document.getElementById("notice");
-        notice.style.display = "none";
-    },
-
     tallyVotes: function () {
         "use strict";
 
