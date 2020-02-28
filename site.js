@@ -476,7 +476,7 @@ voteInfo = {
 
         //If user unclicks to nothings selected, show this message.
         if (!votes || !votes.length) {
-            sumText.textContent = "Click a state!";
+            sumText.textContent = "0 votes";
         } else {
 
             //Otherwise...
