@@ -25,17 +25,45 @@ header {
 }
 
 #header-text {
-    width: 70%;
     margin: 0;
     padding: 0;
     flex: initial; /*flex 0 1 auto*/
 }
 
 #header-button {
-    width: 25%;
     margin: 0 5% 0 0;
     padding: 0;
     flex: initial; /*flex 0 1 auto*/
+}
+
+@media all and (min-width: 300px) {
+    #header-text {
+        width: 60%;
+    }
+
+    #header-button {
+        width: 35%;
+    }
+}
+
+@media all and (min-width: 340px) {
+    #header-text {
+        width: 65%;
+    }
+
+    #header-button {
+        width: 30%;
+    }
+}
+
+@media all and (min-width: 440px) {
+    #header-text {
+        width: 70%;
+    }
+
+    #header-button {
+        width: 25%;
+    }
 }
 
 #sum-text {
