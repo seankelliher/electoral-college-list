@@ -140,6 +140,7 @@ section {
 .state p {
     display: inline-block;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 #w2016-heading, .w2016 {
