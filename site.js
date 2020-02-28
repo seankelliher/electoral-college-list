@@ -468,18 +468,21 @@ voteInfo = {
     tallyVotes: function () {
         "use strict";
 
-        //Gather all elements with "picked" class.
-        const votesPicked = document.getElementsByClassName("votes-picked");
+        //Gather all "votes" classes within "selects" classes.
+        const votes = document.querySelectorAll(".selects .votes");
 
-        //Get the sum-text element.
+        //Get the element where vote total is placed.
         const sumText = document.getElementById("sum-text");
 
-        //If not states are picked, make votes zero.
-        if (!votesPicked || !votesPicked.length) {
-            sumText.textContent = "0";
+        //If user unclicks to nothings selected, show this message.
+        if (!votes || !votes.length) {
+            sumText.textContent = "Click a state!";
         } else {
-            //Transform picked node list into real array.
-            const texts = Array.from(votesPicked, (vote) => vote.textContent);
+
+            //Otherwise...
+
+            //Transform "votes" node list into real array.
+            const texts = Array.from(votes, (vote) => vote.textContent);
 
             //Convert strings to numbers.
             const num = texts.map((text) => Number(text));
@@ -488,12 +491,17 @@ voteInfo = {
             const sum = num.reduce((acc, val) => acc + val);
 
             //Place the result.
-            sumText.textContent = sum;
+            sumText.textContent = sum + " votes";
 
-            //Invoke the next function. Pass "sum" as parameter.
-            voteInfo.positionSum(sum);
+            //If less than 270 votes, make "vote total" button gray.
+            //If 270 votes or more (victory), make "vote total" button gold.
+            if (sum < 270) {
+                sumText.style.backgroundColor = "#F5F5F5";
+            } else if (sum >= 270) {
+                sumText.style.backgroundColor = "#FFE082";
+            }
         }
-    },
+    }
 
     positionSum: function (sm) {
         "use strict";
