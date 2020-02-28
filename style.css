@@ -87,6 +87,19 @@ section {
     flex: initial; /*flex 0 1 auto*/
 }
 
+button {
+    width: 100%;
+    margin: 0;
+    padding: 0 1em;
+    outline: none;
+    border: 1px solid #EEE; /*grey 200*/
+    border-radius: 4px;
+}
+
+.selects {
+    color: #bdbdbd; /*grey 400*/
+}
+
 h1 {
     font-family: 'Francois One', sans-serif;
     line-height: 1.5;
