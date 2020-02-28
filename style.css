@@ -107,6 +107,38 @@ footer {
     background: #F5F5F5; /*grey 100*/
 }
 
+/*Fonts*/
+p, button {
+    font-family: 'Roboto', serif;
+    font-size: 1em;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+@media all and (min-width: 300px) {
+    h1 {
+        font-size: 1.2em;
+    }
+}
+
+@media all and (min-width: 400px) {
+    h1 {
+        font-size: 1.4em;
+    }
+}
+
+@media all and (min-width: 600px) {
+    h1 {
+        font-size: 1.6em;
+    }
+}
+
 h1 {
     font-family: 'Francois One', sans-serif;
     line-height: 1.5;
