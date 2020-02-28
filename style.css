@@ -15,9 +15,9 @@ html, body {
 }
 
 header {
-    width: 90%;
+    width: 95%;
     margin: 0;
-    padding: .5em 5%;
+    padding: .5em 2.5%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between; /*main axis.*/
@@ -71,9 +71,9 @@ header {
 }
 
 main {
-    width: 90%;
+    width: 95%;
     margin: 0;
-    padding: 1em 5%;
+    padding: 1em 2.5%;
     flex: 1;
     overflow: auto;
 }
@@ -183,9 +183,9 @@ button {
 }
 
 footer {
-    width: 90%;
+    width: 95%;
     margin: 0;
-    padding: .5em 5%;
+    padding: .5em 2.5%;
     background: #F5F5F5; /*grey 100*/
 }
 
