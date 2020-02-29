@@ -1,6 +1,6 @@
 # Electoral College
 
-Interactive Electoral College calculator. User adds/subtracts states to find combinations that get the 270 votes needed to win the US Presidental Election. Highlighting shows (1) which states have been selected and (2) who won each state in the 2016 Presidental Election. A "real time" total is maintained. No need to press a "submit" button. Also, the "total" number of votes is fixed. No need to scroll up/down on small screens to see it.
+Electoral College calculator. User adds/subtracts states to find combinations that get the 270 votes needed to win the US Presidental Election. Color coding shows which states have been selected and who won the state in 2016 (last election). The vote total is fixed in the header. No need to scroll up/down on small screens to see it.
 
 ## Authors
 
