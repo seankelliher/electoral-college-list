@@ -1,16 +1,16 @@
-//Global variable (actually let)
+//Global variable.
 let voteInfo;
 
-//Monitor page, after it loads invoke function.
+//Monitor page, after it loads invoke functions.
 //You'll need the stylesheet so "window" and load" over "document"
 //and "DOMContentLoaded" is a safer bet.
 window.addEventListener("load", function () {
     "use strict";
 
     voteInfo.createEle();
+    voteInfo.fadeFooter();
 });
 
-//The voteInfo variable (let)
 voteInfo = {
 
     electoralCollege: [
