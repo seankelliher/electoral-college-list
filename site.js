@@ -490,8 +490,9 @@ voteInfo = {
             //Add numbers using reduce.
             const sum = num.reduce((acc, val) => acc + val);
 
-            //Place the result.
+            //Place the result. Make button visible.
             sumText.textContent = sum + " votes";
+            sumText.style.visibility = "visible";
 
             //If less than 270 votes, make "vote total" button gray.
             //If 270 votes or more (victory), make "vote total" button gold.
