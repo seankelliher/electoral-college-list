@@ -176,36 +176,6 @@ section {
     }
 }
 
-.state p {
-    display: inline-block;
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-#w2016-heading, .w2016 {
-    margin: 0 5% 0 0;
-    padding: 0;
-    flex: initial; /*flex 0 1 auto*/
-}
-
-@media all and (min-width: 300px) {
-    #w2016-heading, .w2016 {
-        width: 35%;
-    }
-}
-
-@media all and (min-width: 340px) {
-    #w2016-heading, .w2016 {
-        width: 30%;
-    }
-}
-
-@media all and (min-width: 440px) {
-    #w2016-heading, .w2016 {
-        width: 25%;
-    }
-}
-
 button {
     width: 100%;
     margin: 0;
