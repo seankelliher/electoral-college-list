@@ -218,6 +218,20 @@ p, button {
     font-weight: 400;
 }
 
+.state p {
+    display: inline-block;
+    cursor: pointer;
+    color: #007AC1; /*light blue 500 dark*/
+}
+
+.state p:hover {
+    text-decoration: underline;
+}
+
+.selects .votes p, .selects .state p {
+    color: #BDBDBD; /*grey 400*/
+}
+
 h1 {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
