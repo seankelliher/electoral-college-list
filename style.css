@@ -83,6 +83,7 @@ header {
 
 #sum-text {
     background: #F5F5F5; /*grey 100*/
+    visibility: hidden;
 }
 
 main {
