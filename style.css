@@ -194,6 +194,23 @@ footer {
     bottom: 0;
 }
 
+.fade {
+  animation: fadeOut 1s ease-in-out 1s 1 normal forwards;
+  /*shorthand:  name, duration, timing-function, delay, iteration-count, direction, fill-mode*/
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    60% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 /*Fonts*/
 p, button {
     font-family: 'Roboto', serif;
