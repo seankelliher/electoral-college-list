@@ -11,7 +11,10 @@ html, body {
     margin: 0 auto;
     padding: 0;
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
+    justify-content: flex-start; /*main axis.*/
+    align-items: flex-start; /*cross-axis.*/
+    position: relative;
 }
 
 header {
