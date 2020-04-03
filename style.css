@@ -51,9 +51,9 @@ header {
     }
 }
 
-@media all and (min-width: 340px) {
+@media all and (min-width: 400px) {
     #header-text {
-        width: 65%;
+        width: 55%;
     }
 
     #header-button {
@@ -61,13 +61,23 @@ header {
     }
 }
 
-@media all and (min-width: 440px) {
+@media all and (min-width: 500px) {
     #header-text {
-        width: 70%;
+        width: 50%;
     }
 
     #header-button {
         width: 25%;
+    }
+}
+
+@media all and (min-width: 600px) {
+    #header-text {
+        width: 45%;
+    }
+
+    #header-button {
+        width: 20%;
     }
 }
 
