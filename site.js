@@ -502,6 +502,22 @@ voteInfo = {
                 sumText.style.backgroundColor = "#FFE082";
             }
         }
+    },
+
+    fadeFooter: function () {
+        "use strict";
+
+        //Get elements. Check if footer contains "fade" class.
+        const main = document.querySelector("main");
+        const footer = document.querySelector("footer");
+        const fade = footer.classList.contains("fade");
+
+        //If not, monitor main. Add class, fade footer, if user scrolls.
+        if (fade === false) {
+            main.addEventListener("scroll", function () {
+                footer.classList.add("fade");
+            });
+        }
     }
 
 }; //close voteInfo
