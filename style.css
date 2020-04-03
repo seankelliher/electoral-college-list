@@ -111,50 +111,68 @@ section {
 }
 
 #votes-heading, .votes {
-    margin: 0 5% 0 0;
+    margin: 0;
     padding: 0;
     flex: initial; /*flex 0 1 auto*/
-}
-
-@media all and (min-width: 300px) {
-    #votes-heading, .votes {
-        width: 13%;
-    }
-}
-
-@media all and (min-width: 340px) {
-    #votes-heading, .votes {
-        width: 15%;
-    }
-}
-
-@media all and (min-width: 440px) {
-    #votes-heading, .votes {
-        width: 10%;
-    }
 }
 
 #state-heading, .state {
-    margin: 0 5% 0 0;
+    margin: 0;
+    padding: 0;
+    flex: initial; /*flex 0 1 auto*/
+}
+
+#w2016-heading, .w2016 {
+    margin: 0;
     padding: 0;
     flex: initial; /*flex 0 1 auto*/
 }
 
 @media all and (min-width: 300px) {
-    #state-heading, .state {
-        width: 37%;
+    #votes-heading, .votes {
+        width: 15%;
     }
-}
 
-@media all and (min-width: 340px) {
     #state-heading, .state {
+        width: 40%;
+    }
+
+    #w2016-heading, .w2016 {
         width: 35%;
     }
 }
 
-@media all and (min-width: 440px) {
+@media all and (min-width: 400px) {
+    #state-heading, .state {
+        width: 35%;
+    }
+
+    #w2016-heading, .w2016 {
+        width: 30%;
+    }
+}
+
+@media all and (min-width: 500px) {
+    #votes-heading, .votes {
+        width: 10%;
+    }
+
     #state-heading, .state {
         width: 30%;
+    }
+
+    #w2016-heading, .w2016 {
+        width: 25%;
+    }
+}
+
+@media all and (min-width: 600px) {
+    #state-heading, .state {
+        width: 25%;
+    }
+
+    #w2016-heading, .w2016 {
+        width: 20%;
     }
 }
 
