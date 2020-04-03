@@ -184,15 +184,14 @@ button {
     border: none;
 }
 
-.selects {
-    color: #BDBDBD; /*grey 400*/
-}
-
 footer {
     width: 95%;
     margin: 0;
     padding: 0 2.5%;
     background: #F5F5F5; /*grey 100*/
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 /*Fonts*/
