@@ -262,6 +262,14 @@ button {
     border-radius: 4px;
 }
 
+.clinton {
+    background: #3A6D8C;
+}
+
+.trump {
+    background: #F23A29;
+}
+
 footer {
     width: 95%;
     margin: 0;
