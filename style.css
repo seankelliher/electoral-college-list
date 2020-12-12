@@ -318,7 +318,7 @@ p, button {
 .state p {
     display: inline-block;
     cursor: pointer;
-    color: #007AC1; /*light blue 500 dark*/
+    color: #001F99; /*dark magenta*/
 }
 
 .state p:hover {
@@ -327,6 +327,19 @@ p, button {
 
 .selects .votes p, .selects .state p {
     color: #BDBDBD; /*grey 400*/
+    text-decoration: line-through;
+}
+
+footer p {
+    line-height: 1.2;
+    margin: .25em 0;
+    padding: .25em 0;
+    cursor: pointer;
+    color: #001F99; /*dark magenta*/
+}
+
+footer p:hover {
+    text-decoration: underline;
 }
 
 h1 {
