@@ -9,8 +9,6 @@ Interactive component to calculate Electoral College votes.
 
 ![screen shot of project](/screenshots/electoral-college-list-screenshot2.jpg)
 
-![screen shot of project](/screenshots/electoral-college-list-screenshot3.jpg)
-
 ## Installation and Setup Instructions
 
 This is a static component. All you need is a web browser. However, component uses ES6 modules. Developing locally may require disabling your browser's local file restrictions.
