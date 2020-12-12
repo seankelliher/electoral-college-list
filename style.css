@@ -1,5 +1,4 @@
 html, body {
-    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -7,25 +6,49 @@ html, body {
 #container {
     width: 100%;
     max-width: 600px;
-    height: 100%;
     margin: 0 auto;
     padding: 0;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
     justify-content: flex-start; /*main axis.*/
     align-items: flex-start; /*cross-axis.*/
     position: relative;
 }
 
 header {
-    width: 95%;
+    width: 90%;
     margin: 0;
-    padding: .5em 2.5%;
+    padding: .5em 5%;
     flex: initial; /*flex 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between; /*main axis.*/
     align-items: center; /*cross-axis.*/
+    background: #FAFAFA; /*grey 50*/
+    border-bottom: 1px solid #EEE; /*grey 200*/
+    position: sticky;
+    top: 0;
+}
+
+header::before {
+    content:  "";
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    width: 1200px;
+    left: 100%;
+    background: #FAFAFA; /*grey 50*/
+    border-bottom: 1px solid #EEE; /*grey 200*/
+}
+
+header::after {
+    content:  "";
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    width: 1200px;
+    right: 100%;
+    background: #FAFAFA; /*grey 50*/
     border-bottom: 1px solid #EEE; /*grey 200*/
 }
 
