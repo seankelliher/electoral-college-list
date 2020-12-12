@@ -105,8 +105,62 @@ header::after {
 }
 
 #sum-text {
-    background: #F5F5F5; /*grey 100*/
+    background: #000;
     visibility: hidden;
+}
+
+nav {
+    width: 90%;
+    margin: 0;
+    padding: 0 5%;
+    flex: initial; /*flex 0 1 auto*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; /*main axis.*/
+    align-items: center; /*cross-axis.*/
+    background: #FAFAFA;
+    border-bottom: 1px solid #EEE; /*grey 200*/
+    position: sticky;
+}
+
+nav::before {
+    content:  "";
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    width: 1200px;
+    left: 100%;
+    background: #FAFAFA;
+    border-bottom: 1px solid #EEE; /*grey 200*/
+}
+
+nav::after {
+    content:  "";
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    width: 1200px;
+    right: 100%;
+    background: #FAFAFA;
+    border-bottom: 1px solid #EEE; /*grey 200*/
+}
+
+@media all and (min-width: 300px) {
+    nav {
+        top: 3em;
+    }
+}
+
+@media all and (min-width: 400px) {
+    nav {
+        top: 3.4em;
+    }
+}
+
+@media all and (min-width: 600px) {
+    nav {
+        top: 4em;
+    }
 }
 
 main {
