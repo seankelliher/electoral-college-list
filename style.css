@@ -271,29 +271,40 @@ button {
 }
 
 footer {
-    width: 95%;
-    margin: 0;
-    padding: 0 2.5%;
-    background: #F5F5F5; /*grey 100*/
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    padding: 0;
+    flex: initial; /*flex 0 1 auto*/
+    background: #FAFAFA; /*grey 50*/
+    border-top: 1px solid #EEE; /*grey 200*/
+    border-left: 1px solid #EEE; /*grey 200*/
+    border-right: 1px solid #EEE; /*grey 200*/
+    text-align: center;
 }
 
-.fade {
-  animation: fadeOut 1s ease-in-out 1s 1 normal forwards;
-  /*shorthand:  name, duration, timing-function, delay, iteration-count, direction, fill-mode*/
+@media all and (min-width: 300px) {
+    footer {
+        width: 35%;
+        margin: 0 32.5%;
+    }
 }
 
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
+@media all and (min-width: 400px) {
+    footer {
+        width: 30%;
+        margin: 0 35%;
     }
-    60% {
-        opacity: .5;
+}
+
+@media all and (min-width: 500px) {
+    footer {
+        width: 25%;
+        margin: 0 37.5%;
     }
-    100% {
-        opacity: 0;
+}
+
+@media all and (min-width: 600px) {
+    footer {
+        width: 20%;
+        margin: 0 40%;
     }
 }
 
