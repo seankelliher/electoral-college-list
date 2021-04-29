@@ -109,10 +109,22 @@ const electoralCollege = [
         w2020: "Trump"
     },
     {
-        identity: "maine",
-        state: "Maine",
-        votes: 4,
-        w2020: "Biden" //3 Biden, 1 Trump.
+        identity: "maine-sw",
+        state: "Maine (state)",
+        votes: 2,
+        w2020: "Biden"
+    },
+    {
+        identity: "maine-d1",
+        state: "Maine (dist. 1)",
+        votes: 1,
+        w2020: "Biden"
+    },
+    {
+        identity: "maine-d2",
+        state: "Maine (dist. 2)",
+        votes: 1,
+        w2020: "Trump"
     },
     {
         identity: "maryland",
@@ -157,10 +169,28 @@ const electoralCollege = [
         w2020: "Trump"
     },
     {
-        identity: "nebraska",
-        state: "Nebraska",
-        votes: 5,
-        w2020: "Trump" //1 Biden, 4 Trump.
+        identity: "nebraska-sw",
+        state: "Nebraska (state)",
+        votes: 2,
+        w2020: "Trump"
+    },
+        {
+        identity: "nebraska-d1",
+        state: "Nebraska (dist. 1)",
+        votes: 1,
+        w2020: "Trump"
+    },
+    {
+        identity: "nebraska-d2",
+        state: "Nebraska (dist. 2)",
+        votes: 1,
+        w2020: "Biden"
+    },
+    {
+        identity: "nebraska-d3",
+        state: "Nebraska (dist. 3)",
+        votes: 1,
+        w2020: "Trump"
     },
     {
         identity: "nevada",
