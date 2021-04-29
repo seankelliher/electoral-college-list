@@ -271,39 +271,14 @@ button {
 }
 
 footer {
-    padding: 0;
+    width: 90%;
+    margin: 0;
+    padding: .0 5%;
     flex: initial; /*flex 0 1 auto*/
-    background: #FAFAFA; /*grey 50*/
-    border: 1px solid #EEE; /*grey 200*/
-    text-align: center;
-}
-
-@media all and (min-width: 300px) {
-    footer {
-        width: 35%;
-        margin: 0 32.5% 1em 32.5%;
-    }
-}
-
-@media all and (min-width: 400px) {
-    footer {
-        width: 30%;
-        margin: 0 35% 1em 35%;
-    }
-}
-
-@media all and (min-width: 500px) {
-    footer {
-        width: 25%;
-        margin: 0 37.5% 1em 37.5%;
-    }
-}
-
-@media all and (min-width: 600px) {
-    footer {
-        width: 20%;
-        margin: 0 40% 1em 40%;
-    }
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; /*main axis.*/
+    align-items: flex-start; /*cross-axis.*/
 }
 
 /*Fonts*/
@@ -328,15 +303,12 @@ p, button {
     text-decoration: line-through;
 }
 
-footer p {
-    line-height: 1.2;
-    margin: .25em 0;
-    padding: .25em 0;
+#clear-all {
     cursor: pointer;
     color: #001F99; /*dark magenta*/
 }
 
-footer p:hover {
+#clear-all:hover {
     text-decoration: underline;
 }
 
