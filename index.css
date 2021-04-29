@@ -274,37 +274,35 @@ footer {
     padding: 0;
     flex: initial; /*flex 0 1 auto*/
     background: #FAFAFA; /*grey 50*/
-    border-top: 1px solid #EEE; /*grey 200*/
-    border-left: 1px solid #EEE; /*grey 200*/
-    border-right: 1px solid #EEE; /*grey 200*/
+    border: 1px solid #EEE; /*grey 200*/
     text-align: center;
 }
 
 @media all and (min-width: 300px) {
     footer {
         width: 35%;
-        margin: 0 32.5%;
+        margin: 0 32.5% 1em 32.5%;
     }
 }
 
 @media all and (min-width: 400px) {
     footer {
         width: 30%;
-        margin: 0 35%;
+        margin: 0 35% 1em 35%;
     }
 }
 
 @media all and (min-width: 500px) {
     footer {
         width: 25%;
-        margin: 0 37.5%;
+        margin: 0 37.5% 1em 37.5%;
     }
 }
 
 @media all and (min-width: 600px) {
     footer {
         width: 20%;
-        margin: 0 40%;
+        margin: 0 40% 1em 40%;
     }
 }
 
