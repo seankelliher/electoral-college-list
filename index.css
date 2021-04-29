@@ -198,7 +198,7 @@ section {
     flex: initial; /*flex 0 1 auto*/
 }
 
-#w2016-heading, .w2016 {
+#w2020-heading, .w2020 {
     margin: 0;
     padding: 0;
     flex: initial; /*flex 0 1 auto*/
@@ -213,7 +213,7 @@ section {
         width: 40%;
     }
 
-    #w2016-heading, .w2016 {
+    #w2020-heading, .w2020 {
         width: 35%;
     }
 }
@@ -223,7 +223,7 @@ section {
         width: 35%;
     }
 
-    #w2016-heading, .w2016 {
+    #w2020-heading, .w2020 {
         width: 30%;
     }
 }
@@ -237,7 +237,7 @@ section {
         width: 30%;
     }
 
-    #w2016-heading, .w2016 {
+    #w2020-heading, .w2020 {
         width: 25%;
     }
 }
@@ -247,7 +247,7 @@ section {
         width: 25%;
     }
 
-    #w2016-heading, .w2016 {
+    #w2020-heading, .w2020 {
         width: 20%;
     }
 }
@@ -262,7 +262,7 @@ button {
     border-radius: 4px;
 }
 
-.clinton {
+.biden {
     background: #3A6D8C;
 }
 

@@ -28,18 +28,18 @@ function createEle() {
         //Assign class name to divs (for styling).
         div1.setAttribute("class", "votes");
         div2.setAttribute("class", "state");
-        div3.setAttribute("class", "w2016");
+        div3.setAttribute("class", "w2020");
 
         //Assign text content to paras and button.
         para1.textContent = index.votes;
         para2.textContent = index.state;
-        button.textContent = index.w2016;
+        button.textContent = index.w2020;
 
         //Assign class, which assigns button color.
-        if (index.w2016 === "Clinton") {
-            button.classList.add("clinton");
+        if (index.w2020 === "Biden") {
+            button.classList.add("biden");
         }
-        if (index.w2016 === "Trump") {
+        if (index.w2020 === "Trump") {
             button.classList.add("trump");
         }
 
