@@ -24,7 +24,7 @@ header {
     flex-flow: row wrap;
     justify-content: space-between; /*main axis.*/
     align-items: center; /*cross-axis.*/
-    background: #FAFAFA; /*grey 50*/
+    background: #FFF; /*white*/
     border-bottom: 1px solid #EEE; /*grey 200*/
     position: sticky;
     top: 0;
@@ -37,7 +37,7 @@ header::before {
     bottom: -1px;
     width: 1200px;
     left: 100%;
-    background: #FAFAFA; /*grey 50*/
+    background: #FFF; /*white*/
     border-bottom: 1px solid #EEE; /*grey 200*/
 }
 
@@ -48,7 +48,7 @@ header::after {
     bottom: -1px;
     width: 1200px;
     right: 100%;
-    background: #FAFAFA; /*grey 50*/
+    background: #FFF; /*white*/
     border-bottom: 1px solid #EEE; /*grey 200*/
 }
 
@@ -118,7 +118,7 @@ nav {
     flex-flow: row wrap;
     justify-content: space-between; /*main axis.*/
     align-items: center; /*cross-axis.*/
-    background: #FAFAFA;
+    background: #FFF; /*white*/
     border-bottom: 1px solid #EEE; /*grey 200*/
     position: sticky;
 }
@@ -130,7 +130,7 @@ nav::before {
     bottom: -1px;
     width: 1200px;
     left: 100%;
-    background: #FAFAFA;
+    background: #FFF; /*white*/
     border-bottom: 1px solid #EEE; /*grey 200*/
 }
 
@@ -141,7 +141,7 @@ nav::after {
     bottom: -1px;
     width: 1200px;
     right: 100%;
-    background: #FAFAFA;
+    background: #FFF; /*white*/
     border-bottom: 1px solid #EEE; /*grey 200*/
 }
 
@@ -283,7 +283,7 @@ footer {
 
 /*Fonts*/
 p, button {
-    font-family: 'Roboto', serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.8;
     font-weight: 400;
 }
@@ -313,7 +313,7 @@ p, button {
 }
 
 h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 700;
 }
