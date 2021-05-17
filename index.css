@@ -291,7 +291,7 @@ p, button {
 .state p {
     display: inline-block;
     cursor: pointer;
-    color: #001F99; /*dark magenta*/
+    color: #1976D2; /*blue 700*/
 }
 
 .state p:hover {
@@ -305,7 +305,7 @@ p, button {
 
 #clear-all {
     cursor: pointer;
-    color: #001F99; /*dark magenta*/
+    color: #1976D2; /*blue 700*/
 }
 
 #clear-all:hover {
