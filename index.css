@@ -288,6 +288,10 @@ p, button {
     font-weight: 400;
 }
 
+#votes-heading p, #state-heading p, #w2020-heading p {
+    font-weight: 600;
+}
+
 .state p {
     display: inline-block;
     cursor: pointer;
